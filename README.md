@@ -13,3 +13,10 @@ Procedure
 * use grepl() to find data columns related to mean and standard deviation
 * remove data columns related to meanFreq
 * use aggregate() to take the mean of the desired columns grouped by subject and activity type  
+
+Repo Contents
+-------------------------
+* README.md - this file
+* CodeBook.md - codebook describing tidydata.txt, the variables it contains and their meanings
+* run_analysis.R - the reproducible code that created tidydata.txt
+* tidydata.txt and tidydata.csv - the product of run_analysis.R in two different formats
