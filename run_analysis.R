@@ -5,7 +5,7 @@
 
 run_analysis<-function() {
   #read format files
-  setwd("C:/Users/BARTEB01/Desktop/Coursera/Getting and Cleaning Data")
+  #setwd("C:/Users/BARTEB01/Desktop/Coursera/Getting and Cleaning Data")
   URL<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
   download.file(URL,"Dataset.zip")
   files<-unzip("Dataset.zip",list=TRUE)
