@@ -7,9 +7,9 @@ run_analysis<-function() {
   #read format files
   setwd("C:/Users/BARTEB01/Desktop/Coursera/Getting and Cleaning Data")
   URL<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-  #download.file(URL,"Dataset.zip")
+  download.file(URL,"Dataset.zip")
   files<-unzip("Dataset.zip",list=TRUE)
-  #unzip("Dataset.zip")
+  unzip("Dataset.zip")
   
   
   features<-read.table(files[2,1])
@@ -75,6 +75,6 @@ run_analysis<-function() {
   
   
   #write data to the results folder
-  write.csv(aggdata,file="tidydata.csv",row.names=FALSE)
+  write.table(aggdata,file="tidydata.csv",row.names=FALSE)
   aggdata
 }
